@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Week15_動態捲動效果練習</h1>
+    <div class="center">
+        <a href="#a" class="move">超連結A</a>
+        <a href="#b" class="move">超連結B</a>
+        <a href="#c" class="move">超連結C</a>
+    </div>
+    <div id="a" class="box bg1">區塊A</div>
+    <div id="b" class="box bg2">區塊B</div>
+    <div id="c" class="box bg3">區塊C</div>
+    <div class="back_top">
+        <a href="#top" class="move"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+        crossorigin="anonymous"></script>
+        <script>
+            //抓到a標籤的數值
+           $("a.move").on( "click" , function (){
+            var to = $(this).attr("href");
+            //動畫效果
+            $("html, body, div").animate({
+                scrollTop : $(to).position().top
+            }, 1000)
+           });
+        </script>
+</body>
+</html>

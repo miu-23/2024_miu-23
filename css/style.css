@@ -1,0 +1,94 @@
+body{
+    background-image: url(../image/1337139.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgb(233, 233, 233);
+}
+.box{
+    background-color: rgba(50, 50, 50, 0.6);
+}
+
+.color{
+    background-color: rgba(50, 50, 50, 0.6); 
+}
+
+.navbar-light .navbar-brand{
+    color: rgb(233, 233, 233);
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: rgb(34, 34, 34);
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: rgb(233, 233, 233)
+}
+
+.active{
+    background-color: rgb(233, 233, 233);
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+    color: rgb(253, 255, 123)
+
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover{
+    color: rgb(253, 255, 123)
+}
+.my_photo {
+    width: 100%;
+    max-width: 200px; /* 限制圖片的最大寬度 */
+    margin: 0 auto; /* 使圖片居中 */
+}
+
+.contact_info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.contact_info ul li {
+    display: inline-block;
+    font-size: 30px;
+}
+
+.contact_info ul li a {
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+}
+
+.contact_info ul li a:hover {
+    color: rgb(255, 217, 0); /* 懸停時的顏色 */
+}
+
+.bg_gray {
+    background-color: #4b4b4b65; /* 統一的背景顏色 */
+    border-radius: 10px; /* 可選，讓背景的邊角圓潤 */
+    display: flex; /* 使用 flexbox 使圖片和文字並排 */
+    flex-wrap: wrap; /* 允許換行 */
+}
+
+.bg_gray .col-md-4, .bg_gray .col-md-8 {
+    display: flex;
+    align-items: center; /* 垂直居中 */
+}
+
+.bg_gray .col-md-4 {
+    justify-content: center; /* 圖片區域居中 */
+}
+
+.bg_gray .col-md-8 {
+    text-align: left; /* 文字左對齊 */
+}
+
+@media (max-width: 768px) {
+    .my_photo {
+        max-width: 100%; /* 小螢幕下圖片自動適應 */
+    }
+    .bg_gray {
+        flex-direction: column; /* 小螢幕下，圖片與文字堆疊 */
+        text-align: center; /* 小螢幕下，文字區域居中 */
+    }
+}
+
